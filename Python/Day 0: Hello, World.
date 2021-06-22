@@ -6,15 +6,15 @@ To complete this challenge, you must save a line of input from stdin to a variab
 
 You've got this!
 
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the input string variable may be written differently depending on the best-practice conventions of your submission language.
 
 Input Format
 
-A single line of text denoting  (the variable whose contents must be printed).
+A single line of text denoting input string (the variable whose contents must be printed).
 
 Output Format
 
-Print Hello, World. on the first line, and the contents of  on the second line.
+Print Hello, World. on the first line, and the contents of input string on the second line.
 
 Sample Input
 
