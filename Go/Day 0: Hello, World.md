@@ -1,4 +1,4 @@
-![HackerRank](https://www.hackerrank.com/wp-content/uploads/2020/05/hackerrank_logo-Pride-1.gif)
+![HackerRank](https://hrcdn.net/community-frontend/assets/brand/hr-logo-new-black-green-2f615594d2.svg)
 
 #### Objective
 In this challenge, we review some basic concepts that will get you started with this series. You will need to use the same (or similar) syntax to read input and write output in challenges throughout HackerRank. Check out the Tutorial tab for learning materials and an instructional video!
