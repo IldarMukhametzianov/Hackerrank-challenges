@@ -8,11 +8,11 @@ Given the meal price (base cost of a meal), tip percent (the percentage of the m
 
 #### Example
 
-mealcost = 100 
-tippercent = 15 
-taxpercent = 8
+***mealcost = 100***   
+***tippercent = 15***   
+***taxpercent = 8***  
 
-A tip of 15% * 100 = 15, and the taxes are 8% * 100 = 8. Print the value  and return from the function.
+A tip of 15% * 100 = 15, and the taxes are 8% * 100 = 8. Print the value  **123** and return from the function.
 
 #### Function Description
 Complete the solve function in the editor below.
@@ -30,10 +30,10 @@ Be sure to use precise values for your calculations, or you may end up with an i
 
 #### Input Format
 
-There are  lines of numeric input:
-The first line has a double,  (the cost of the meal before tax and tip).
-The second line has an integer,  (the percentage of  being added as tip).
-The third line has an integer,  (the percentage of  being added as tax).
+There are **3** lines of numeric input:  
+The first line has a double, ***mealcost*** (the cost of the meal before tax and tip).  
+The second line has an integer, ***tippercent*** (the percentage of ***mealcost*** being added as tip).  
+The third line has an integer, ***taxpercent*** (the percentage of ***mealcost*** being added as tax).  
 
 #### Sample Input
 ```
@@ -48,18 +48,54 @@ The third line has an integer,  (the percentage of  being added as tax).
 #### Explanation
 
 Given:
-, , 
+
+***mealcost = 12***, **tippercent = 20**,***taxpercent = 8***   
 
 Calculations:
 
+***tip = 12 and 12/100 x 20 = 2.4  
+tax = 8 and 8/100 x 20 = 0.96  
+total_cost = mealcost + tip + tax = 12 + 2.4 + 0.96 = 15.36  
+round(total_cost) = 15***
+
+We round ***total_cost*** to the nearest integer and print the result, **15** .
+
+#### Solution:
+
+```python
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'solve' function below.
+#
+# The function accepts following parameters:
+#  1. DOUBLE meal_cost
+#  2. INTEGER tip_percent
+#  3. INTEGER tax_percent
+#
 
 
+def solve(meal_cost, tip_percent, tax_percent):
+    # Write your code here
 
-We round  to the nearest integer and print the result, .
+    sum = meal_cost + (meal_cost / 100 * float(tip_percent)) + (meal_cost / 100 * float(tax_percent))
 
+    print(round(sum))
+    
+if __name__ == '__main__':
+    meal_cost = float(input().strip())
 
-Testing <sub>subscript</sub> and <sup>superscript</sup>
+    tip_percent = int(input().strip())
 
-Testing <sub>subscript <sub>subscript level 2</sub></sub>
+    tax_percent = int(input().strip())
 
-Testing <sup>superscript <sup>superscript level 2</sup></sup>
+    solve(meal_cost, tip_percent, tax_percent)
+```
+
