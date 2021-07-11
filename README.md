@@ -1,3 +1,3 @@
 # Hackerrank-challenges
 
-Solving challanges from Hackerrank.
+Solving challenges from Hackerrank.
